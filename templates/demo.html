@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% for k,v in m.items%}
+
+    {% if v > 60 %}
+    <h1>{{k}}:first Class</h1>
+      {% else %}
+      <i>{{k}}:second class</i>
+      {% endif %}
+
+    {%endfor%}
+  </body>
+</html>
